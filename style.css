@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes frame-rotate {
+    0% {transform:rotate(0deg);  }
+    25% {transform:rotate(90deg);}
+    50% { transform:rotate(180deg);}
+    75% { transform:rotate(270deg);}
+    100% {transform:rotate(360deg);}
+}
+
+@keyframes frame-transit {
+    0%, 100% {transform:translate(0, 0);  }
+    25% {transform:translate(200px, 0);}
+    50% { transform:translate(200px,200px);}
+    75% { transform:translate(0, 200px);}
+}
+
+.style3 {
+
+    width: 100px;
+    height: 100px;
+    margin: 100px 0 0 100px;
+    animation-name: frame-transit;
+    animation-duration:12s;
+    animation-timing-function:linear;
+    animation-delay: 2s;
+    animation-iteration-count:3;
+}
+
+.style4 {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    animation-name: frame-rotate;
+    animation-duration:12s;
+    animation-timing-function:linear;
+    animation-delay: 2s;
+    animation-iteration-count:3;
+}
+
